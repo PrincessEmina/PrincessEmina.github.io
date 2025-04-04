@@ -10,15 +10,15 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav id="navbar">
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="logo">Princess Emina</div>
-            <div class="menu-toggle" id="mobile-menu">
+            <div class="menu-toggle" id="mobile-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -62,10 +62,10 @@
                 </div>
                 <div class="about-images">
                     <div class="about-image-container">
-                        <div class="about-image image-1"></div>
+                        <div class="about-image image-1" aria-label="Professional headshot"></div>
                     </div>
                     <div class="about-image-container">
-                        <div class="about-image image-2"></div>
+                        <div class="about-image image-2" aria-label="Working at desk"></div>
                     </div>
                 </div>
             </div>
@@ -174,7 +174,7 @@
             <h2 class="section-title">My Portfolio</h2>
             <div class="portfolio-container">
                 <div class="portfolio-item">
-                    <div class="portfolio-image">
+                    <div class="portfolio-image" aria-label="Email Management System Project">
                         <div class="overlay">
                             <a href="#" target="_blank" class="btn portfolio-btn">View Project</a>
                         </div>
@@ -191,7 +191,7 @@
                 </div>
                 
                 <div class="portfolio-item">
-                    <div class="portfolio-image">
+                    <div class="portfolio-image" aria-label="Responsive Business Website Project">
                         <div class="overlay">
                             <a href="#" target="_blank" class="btn portfolio-btn">View Project</a>
                         </div>
@@ -217,7 +217,7 @@
             <div class="pitch-container">
                 <div class="video-container">
                     <!-- Video placeholder -->
-                    <div class="video-placeholder">
+                    <div class="video-placeholder" aria-label="Video introduction - click to play">
                         <i class="fas fa-play-circle"></i>
                         <p>Watch my 60-second introduction</p>
                     </div>
