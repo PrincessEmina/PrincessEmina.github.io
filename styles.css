@@ -100,9 +100,9 @@ img {
   box-shadow: var(--shadow);
 }
 
-section {
+/* section {
   scroll-margin-top: 80px;
-}
+} */
 
 .section {
   padding: 100px 0;
