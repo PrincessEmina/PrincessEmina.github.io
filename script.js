@@ -98,13 +98,13 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", () => {
     const navbar = document.getElementById("navbar")
     if (window.scrollY > 50) {
-      navbar.style.padding = "10px 0"
-      navbar.style.backgroundColor = "rgba(255, 255, 255, 0.98)"
-      navbar.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)"
+      navbar.style.padding = "0"
+      navbar.style.backgroundColor = "rgba(26, 26, 26, 0.98)"
+      navbar.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.2)"
     } else {
-      navbar.style.padding = "20px 0"
-      navbar.style.backgroundColor = "rgba(255, 255, 255, 0.95)"
-      navbar.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.05)"
+      navbar.style.padding = "0"
+      navbar.style.backgroundColor = "rgba(26, 26, 26, 0.95)"
+      navbar.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)"
     }
   })
 
