@@ -91,13 +91,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   skillsObserver.observe(skillSection)
 
-  // Video placeholder click handler
-  const videoPlaceholder = document.querySelector(".video-placeholder")
-  videoPlaceholder.addEventListener("click", () => {
-    alert("Video player would open here in a real implementation.")
-    // In a real implementation, you would replace the placeholder with an actual video player
-    // videoPlaceholder.innerHTML = '<video controls autoplay><source src="your-video.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
-  })
+  // // Video placeholder click handler
+  // const videoPlaceholder = document.querySelector(".video-placeholder")
+  // videoPlaceholder.addEventListener("click", () => {
+  //   alert("Video player would open here in a real implementation.")
+  //   // In a real implementation, you would replace the placeholder with an actual video player
+  //   // videoPlaceholder.innerHTML = '<video controls autoplay><source src="your-video.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
+  // })
 
   // Navbar scroll effect
   window.addEventListener("scroll", () => {
