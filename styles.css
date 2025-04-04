@@ -868,3 +868,10 @@ footer::before {
   }
 }
 
+.profile-image {
+  background-image: url('images/profile.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 200px;  /* Set appropriate dimensions */
+  height: 200px;
+}
