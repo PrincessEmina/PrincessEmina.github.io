@@ -100,6 +100,10 @@ img {
   box-shadow: var(--shadow);
 }
 
+section {
+  scroll-margin-top: 80px;
+}
+
 .section {
   padding: 100px 0;
 }
@@ -218,7 +222,7 @@ img {
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, var(--light-color) 0%, var(--secondary-color) 100%);
-  margin-top: -80px; /* Offset the padding-top on body */
+  /* margin-top: -80px;  Offset the padding-top on body */
   padding-top: 80px; /* Add padding to account for navbar */
   position: relative;
   overflow: hidden;
