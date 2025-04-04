@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
   mobileMenu.addEventListener("click", () => {
     mobileMenu.classList.toggle("active")
     navMenu.classList.toggle("active")
+
+    // Update ARIA attributes
+    const expanded = mobileMenu.getAttribute("aria-expanded") === "true" || false
+    mobileMenu.setAttribute("aria-expanded", !expanded)
   })
 
   // Close mobile menu when clicking on a nav link
@@ -14,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", () => {
       mobileMenu.classList.remove("active")
       navMenu.classList.remove("active")
+      mobileMenu.setAttribute("aria-expanded", "false")
     })
   })
 
@@ -98,13 +103,13 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", () => {
     const navbar = document.getElementById("navbar")
     if (window.scrollY > 50) {
-      navbar.style.padding = "10px 0"
-      navbar.style.backgroundColor = "rgba(255, 255, 255, 0.98)"
-      navbar.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)"
+      navbar.style.padding = "0"
+      navbar.style.backgroundColor = "rgba(26, 26, 26, 0.98)"
+      navbar.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.2)"
     } else {
-      navbar.style.padding = "20px 0"
-      navbar.style.backgroundColor = "rgba(255, 255, 255, 0.95)"
-      navbar.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.05)"
+      navbar.style.padding = "0"
+      navbar.style.backgroundColor = "rgba(26, 26, 26, 0.95)"
+      navbar.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)"
     }
   })
 
@@ -114,5 +119,35 @@ document.addEventListener("DOMContentLoaded", () => {
       element.classList.add("appear")
     })
   }, 300)
+
+  // Add sparkling effect to the hero section
+  function createSparkle() {
+    const sparkle = document.createElement("div")
+    sparkle.className = "sparkle"
+
+    // Random position
+    const posX = Math.random() * 100
+    const posY = Math.random() * 100
+
+    // Random size
+    const size = Math.random() * 5 + 2
+
+    // Apply styles
+    sparkle.style.left = posX + "%"
+    sparkle.style.top = posY + "%"
+    sparkle.style.width = size + "px"
+    sparkle.style.height = size + "px"
+
+    // Add to hero section
+    document.getElementById("home").appendChild(sparkle)
+
+    // Remove after animation
+    setTimeout(() => {
+      sparkle.remove()
+    }, 1500)
+  }
+
+  // Create sparkles at intervals
+  setInterval(createSparkle, 300)
 })
 
