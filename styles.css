@@ -223,7 +223,7 @@ img {
   align-items: center;
   background: linear-gradient(135deg, var(--light-color) 0%, var(--secondary-color) 100%);
   /* margin-top: -80px;  Offset the padding-top on body */
-  padding-top: 140px; /* Add padding to account for navbar */
+  padding-top: 100px; /* Add padding to account for navbar */
   position: relative;
   overflow: hidden;
 }
