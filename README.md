@@ -1,5 +1,9 @@
 ## Hi there 👋
 
+
+## I am learning frontend development with ALX Africa.
+
+
 <!--
 **PrincessEmina/PrincessEmina** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
